@@ -1,0 +1,26 @@
+
+       1- in terminatl digit this:
+
+        yarn add babel-cli  babel-preset-env --dev
+
+   2 - In the file: .babelrc
+                          {
+              "presets": [
+                [
+                  "env",
+                  {
+                    "targets": {
+                      "node": "current"
+                    }
+                  }
+                ]
+              ]
+            }
+
+
+
+
+            in package json
+
+        "dev": "nodemon -w src --exec \"babel-node src --presets env\"",
+
